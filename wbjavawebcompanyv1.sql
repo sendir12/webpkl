@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 27 Jun 2022 pada 09.09
+-- Generation Time: 18 Jul 2022 pada 15.48
 -- Versi Server: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -40,13 +40,6 @@ CREATE TABLE `agenda` (
   `isi` longtext NOT NULL,
   `tanggal` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `agenda`
---
-
-INSERT INTO `agenda` (`id_agenda`, `nama`, `jenis_agenda`, `panitia`, `tempat`, `mulai`, `selesai`, `ringkasan`, `isi`, `tanggal`) VALUES
-(1, 'Pelantikan Gubernur DKI Jakarta', 'Internal', 'Pusdatin', 'Balai Kota', '2017-09-08', '2017-09-09', 'adada', '<p>adada</p>\r\n', '2017-09-08 01:18:36');
 
 -- --------------------------------------------------------
 
@@ -108,9 +101,8 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id_berita`, `id_user`, `id_kategori`, `updater`, `slug_berita`, `judul_berita`, `isi`, `status_berita`, `jenis_berita`, `keywords`, `gambar`, `icon`, `hits`, `urutan`, `tanggal_mulai`, `tanggal_selesai`, `tanggal_post`, `tanggal_publish`, `tanggal`) VALUES
-(8, 3, 5, '', 'holywings-indonesia-dilaporkan-ke-polda-metro-jaya-terkait-promo-miras', 'Holywings Indonesia Dilaporkan ke Polda Metro Jaya Terkait Promo Miras', '<p style=\"text-align: justify;\"><strong>Himpunan Advokat Muda Indonesia (HAMI)</strong> melaporkan manajemen<strong> Holywings Indonesia</strong> terkait dugaan kasus penistaan agama ke Polda Metro Jaya, Kamis (23/6/2022). Ketua Umum HAMI Sunan Kalijaga menjelaskan, laporan tersebut berkait dengan promosi penjualan minuman keras (miras) di Holywings. Promosi itu, kata Sunan, mengandung unsur penistaan agama.</p>\r\n<p style=\"text-align: justify;\">\"Saya bersama tim Himpunan Advokat Muda Indonesia sudah melaporkan adanya dugaan penistaan agama yang kami duga dilakukan oleh salah satu manajemen kafe,\" ujar Sunan Kalijaga dalam keterangannya, dikutip pada Jumat (24/6/2022).</p>\r\n<p style=\"text-align: justify;\">Laporan tersebut teregistrasi dengan nomor LP/B /3135/VI/2022/SPKT/Polda Metro Jaya. Dalam laporan itu, pihak pelapor bernama Firmansyah yang merupakan anggota HAMI. Baca juga: Bima Arya Wajibkan Holywings Bogor Jual Bajigur dan Bandrek Menurut Sunan, organisasinya melaporkan manajemen Holywings Indonesia atas dugaan ujaran kebencian terhadap individu atau kelompok berdasarkan suku, agama, ras, dan antargolongan (SARA).</p>\r\n<p style=\"text-align: justify;\">Terlapor disangkakan dengan Pasal 28 Ayat 2 juncto Pasal 45 Ayat 2 Undang-Undang Informasi dan Transaksi Elektronik (UU ITE), dan atau Pasal 165 a Kitab Undang-Undang Hukum Pidana (KUHP). \"Kami sangat menyayangkan promo tersebut yang jelas-jelas terpampang nyata melukai hati umat muslim dan nasrani,\" kata Sunan. Dihubungi secara terpisah, Kabid Humas Polda Metro Jaya Kombes Endra Zulpan membenarkan adanya laporan dugaan penistaan agama yang dilakukan oleh manajemen kafe tersebut. Baca juga: Kuasa Hukum Ade Armando Minta Sekjen PAN Hapus Twit soal Tuduhan Penistaan Agama Saat ini, penyidik dari Direktorat Reserse Kriminal Khusus (Ditreskrimsus) Polda Metro Jaya tengah mempelajari laporan tersebut. \"Iya benar. Sudah ditangani oleh Direktorat Reserse Kriminal Khusus Polda Metro Jaya,\" kata Zulpan melalui pesan singkat. Sementara itu, manajemen Holywings Indonesia sebelumnya telah menyampaikan permintaan maaf terkait dengan kegiatan promosinya di media sosial.</p>\r\n<p style=\"text-align: justify;\">\"Kami (juga) telah menindaklanjuti pihak tim promosi yang membuat promosi tersebut, tanpa sepengetahuan manajemen Holywings Indonesia dengan sanksi yang sangat berat,\" ujar pihak manajemen dalam surat permintaan maaf terbuka yang diunggah di akun Instagram resmi @holywingsindonesia.</p>', 'Publish', 'Berita', '', '111111111.jpeg', 'HollyWings', 5, 0, NULL, NULL, '2022-06-24 14:00:48', '2022-06-24 13:58:24', '2022-06-24 07:07:20'),
-(10, 5, 5, '', 'takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', 'Takut Terkena Kejahatan Online atau Phising? Pahami Dulu Yuk Hal Ini!', '<p>Kejahatan online memang masih terus terjadi hingga hari ini. Derasnya arus transformasi digital termasuk di sektor finansial, membuat kita harus mewaspadai setiap modus kejahatan online.&nbsp;</p>\r\n<p>Dari sekian banyak modusnya yang paling sering terjadi adalah phising. Ini adalah salah satu bentuk kejahatan online dengan melakukan pencurian data untuk kepentingan individu dan pastinya bisa merugikanmu sebagai korban.&nbsp;</p>\r\n<p>Kamu harus tahu kalau aksi phishing biasanya dilancarkan melalui berbagai media, seperti e-mail, media sosial, panggilan telepon, dan short message service (SMS). Maka dari itu, biar nggak terjebak modus kejahatan online ada baiknya kamu memahami beberapa hal ini:</p>\r\n<h2 class=\"article-content-body__item-title\" data-component-name=\"desktop:read-page:article-content-body:section:pagetitle\">Jangan Mudah Tergoda Harga Murah</h2>\r\n<p>Sudah menjadi hal umum dan jamak dilakukan, sebelum membeli suatu barang, setiap orang akan mencari harga murah. Jangankan sebelum membeli barang, kejahatan online seringkali dilakukan dengan mengirimkan tautan yang dengan embel-embel promo murah atau diskon besar-besaran.&nbsp;</p>\r\n<p>Contoh barang yang biasanya ditawarkan dengan harga murah adalah gadget, laptop dan kamera digital. Nggak tanggung-tanggung perbedaan harga dengan harga pasar bisa selisih 50%. Penawaran tersebut tentunya membuat siapapun yang melihatnya bakal tergoda.&nbsp;</p>\r\n<p>Maka dari itu, sebelum membeli pastikan kamu crosscheck tokonya ya! Jika memang kamu mendapatkan pesan yang berisi tautan tertentu, ada baiknya nggak mengklik-nya, untuk menghindari pencurian data.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<h2 class=\"article-content-body__item-title\" data-component-name=\"desktop:read-page:article-content-body:section:pagetitle\">Hindari Sembarang Unduh Aplikasi</h2>\r\n<p>Seiring berkembangnya zaman, kejahatan siber semakin berkembang menggunakan sarana yang semakin canggih. Salah satunya dengan menghadirkan aplikasi nggak resmi dari Play Store atau App Store.&nbsp;</p>\r\n<p>Maka dari itu, ada baiknya kamu nggak langsung mengunduh sembarang aplikasi. Biasanya, ketika kamu sudah terlanjur mengunduh aplikasi, akan muncul berbagai permintaan akses yang berpotensi masuk ke ranah pribadi. Tentunya hal tersebut akan merugikanmu, apabila sampai data-datamu dicuri.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<h2 class=\"article-content-body__item-title\" data-component-name=\"desktop:read-page:article-content-body:section:pagetitle\">Hati-hati Terhadap Email yang Masuk</h2>\r\n<p>Kamu harus tahu bahwa phising adalah kejahatan dunia maya yang menggunakan email palsu atau tersamar sebagai senjata utamanya. Adapun tujuan phising adalah untuk mengelabui korban agar percaya bahwa pesan tersebut merupakan suatu yang mereka butuhkan.&nbsp;</p>\r\n<p>Biasanya, pelaku akan menyamar sebagai pihak-pihak tertentu, seperti bank, pebisnis, atau perusahaan terpercaya. Jika kamu menerima email yang mengandung tautan untuk melihat atau mengunduh file dari seseorang yang nggak dikenal, jangan langsung dibuka. Ada baiknya kamu langsung hapus pesan atau attachment tersebut.</p>\r\n<p>Jadi, intinya ketika kamu mendapatkan pesan dari nomor nggak dikenal yang mengiming-imingi hadiah atau penawaran dengan diskon tertentu, serta mendapatkan pesan yang mengarahkan ke tautan tertentu, ingat untuk nggak mengikuti instruksi dari pesan tipuan tersebut.&nbsp;</p>', 'Publish', 'Berita', 'Phising', '085406100_1655967751-shutterstock_1931787956.jpg', 'Phising', 51, 0, NULL, NULL, '2022-06-24 14:21:34', '2022-06-24 14:19:04', '2022-06-24 07:22:22'),
-(11, 5, 5, '', 'pasar-kripto-lesu-simak-cara-bertahan-dari-pendiri-skybridge-capital', 'Pasar Kripto Lesu, Simak Cara Bertahan dari Pendiri Skybridge Capital', '<p dir=\"ltr\">Pendiri&nbsp;<a href=\"https://www.liputan6.com/tag/skybridge-capital\">Skybridge Capital,</a>&nbsp;Anthony Scaramucci, sebuah perusahaan manajemen aset senilai USD 3,5 miliar atau sekitar Rp 51,5 triliun, memiliki beberapa saran untuk investor kripto tentang cara bertahan dari pasar&nbsp;<em>bearish</em>&nbsp;dan pertumpahan darah kripto.</p>\r\n<p dir=\"ltr\">\"Kami berada dalam pertumpahan darah. Ini adalah pasar&nbsp;<em>bearish</em>&nbsp;kedelapan saya. Saya berharap untuk selamat dari yang ini juga,&rdquo; kata Scaramucci, dikutip dari Bitcoin.com, Jumat (24/6/2022).&nbsp;</p>\r\n<p dir=\"ltr\">&ldquo;Saya terdorong oleh fakta bitcoin&nbsp;saat ini berada di atas 50 persen dari keseluruhan kapitalisasi pasar&nbsp;<a href=\"https://www.liputan6.com/tag/kripto\">kripto</a>, yang merupakan tanda lain bahwa ada peningkatan kualitas di sana,&rdquo; lanjut dia.&nbsp;</p>\r\n<p dir=\"ltr\">Scaramucci berpendapat, fenomena yang terjadi pada platform pinjaman&nbsp;<a title=\"kripto&nbsp;\" href=\"https://www.liputan6.com/crypto/read/4994320/bitcoin-sentuh-rp-3137-juta-analis-pesimistis-lonjakan-pasar-kripto\">kripto&nbsp;</a>Celsius memberikan tekanan kepada penurunan harga kripto saat ini sama seperti peristiwa runtuhnya UST dan Luna.&nbsp;</p>\r\n<p dir=\"ltr\">Eksekutif Skybridge itu melanjutkan untuk memberikan beberapa saran kepada investor untuk membantu mereka bertahan di pasar kripto bearish. Dia mulai dengan merekomendasikan orang untuk &ldquo;tetap tidak terpengaruh tetapi tetap pada disiplin investasi jangka panjang&rdquo;.</p>\r\n<p dir=\"ltr\">&ldquo;Setiap orang memiliki perspektif jangka panjang sampai mereka mengalami kerugian jangka pendek, kemudian mereka mulai membakar rambut mereka dan berlari berputar-putar. Saya hanya memperingatkan orang untuk membeli kualitas dan tidak terpengaruh, dan tetap disiplin,&rdquo; kata Scaramucci.&nbsp;</p>\r\n<p dir=\"ltr\">Dia menambahkan investor harus mengakui pasar beruang terjadi dan itu mungkin terjadi satu dari setiap lima tahun jika dilihat selama 120 tahun terakhir.&nbsp;</p>\r\n<p dir=\"ltr\">\"Jika Anda tetap disiplin selama periode waktu itu, Anda menjadi sangat kaya, dan saya pikir itulah pesannya untuk investor,\" ujar dia.&nbsp;</p>\r\n<p dir=\"ltr\">Scaramucci juga mengomentari runtuhnya beberapa koin seperti&nbsp;<a href=\"https://www.liputan6.com/tag/luna\">LUNA</a>&nbsp;dan UST. Scaramucci mencatat ada lebih dari 8.000 koin. Banyak dari proyek ini akan diperdagangkan ke nol. Akan ada lima hingga 15 koin yang dia pikir akan menjadi kasus penggunaan untuk masa depan.</p>\r\n<p dir=\"ltr\">&nbsp;</p>\r\n<p dir=\"ltr\">&nbsp;</p>', 'Publish', 'Berita', '', '016664200_1611571070-cryptocurrency-3085139.jpg', '', 0, 0, NULL, NULL, '2022-06-24 14:24:43', '2022-06-24 14:23:59', '2022-06-24 07:24:43');
+(12, 3, 4, '', 'peran-jozef-zwierzycki-terhadap-geologist', 'Peran Jozef Zwierzycki terhadap geologist', '<p>&nbsp;</p>\r\n<p>Hai sahabat museum. Musmin mengenalkan salah satu geologist yang memiliki peran penting pada masa pemerintahan Hindia Belanda abad ke-20, yaitu Dr. Inz.<br /><br />Jozef Zwierzycki yang berkebangsaan Polandia. Zwierzycki adalah sosok yang produktif dalam melakukan pemetaan di kepulauan Indonesia.</p>', 'Publish', 'Berita', 'geologi', 'geomuzee-20220714-0001.jpg', '', 0, 1, NULL, NULL, '2022-07-14 09:05:40', '2022-07-14 09:02:59', '2022-07-14 02:05:40'),
+(13, 3, 5, '', 'liburan-seru-di-museum-geologi-bandung', 'LIBURAN SERU DI MUSEUM GEOLOGI BANDUNG', '<p>Sahabat museum.. masih libur seru di Museum Geologi, kali ini kegiatan \"Digging Fosil &amp; Painting Fosil\". Tanggal 12 dan 14 Juli 2022, dimulai dari jam 10.00 wib.<br /><br />Jadi hayu gaskeun daftar di tautan bit.ly/DiggingPaintingFossil<br />Peserta yg terpilih akan dihubungi oleh panitia &amp; akan di infokan juga di insta story.<br /><br />Untuk info ke kak Rifqi (0851-5635-1595)<br />Terus pantengin media sosial kita, karena masih ada rangkaian acara lainnya buat nemenin sahabat liburan sekolah.</p>', 'Publish', 'Layanan', 'LIBURAN SERU', 'geomuzee-20220714-0005.jpg', '', 5, 2, NULL, NULL, '2022-07-14 09:07:22', '2022-07-14 09:05:45', '2022-07-18 02:26:28');
 
 -- --------------------------------------------------------
 
@@ -149,8 +141,7 @@ CREATE TABLE `client` (
 --
 
 INSERT INTO `client` (`id_client`, `id_user`, `jenis_client`, `nama`, `pimpinan`, `alamat`, `telepon`, `website`, `email`, `password`, `password_hint`, `isi`, `status_testimoni`, `isi_testimoni`, `gambar`, `status_client`, `keywords`, `status_baca`, `status_siswa`, `ip_address`, `tempat_lahir`, `tanggal_lahir`, `tanggal`) VALUES
-(2, 1, 'Perorangan', 'PT Java Web Media', 'Bapak Andoyo', 'Jalan Lapangan Banteng Barat No. 3-4\r\nTromol Pos 3500', '', '', 'javawebmedia@gmail.com', '8242de3f241790a591666ac9f6ad6be377c8a43f', 'wrygldyt', NULL, 'No', '', NULL, 'No', '', 'Sudah', 'Aktif', '', 'JAKARTA', '1962-01-02', '2019-04-14 01:08:26'),
-(3, 1, 'Perorangan', 'PT Indosat Sukses  Makmur', 'Eflita Meiyetriani', '', '0813 8841 0829', '', 'admin@kabupatenlestari.org', NULL, NULL, NULL, 'No', '', NULL, 'No', '', 'Sudah', 'Aktif', '', '', '1970-01-01', '2019-04-14 03:35:03');
+(3, 3, 'Perorangan', 'PT Indosat Sukses  Makmur', 'Eflita Meiyetriani', '', '0813 8841 0829', '', 'admin@kbb.org', NULL, NULL, NULL, 'No', '', NULL, 'No', '', 'Sudah', 'Aktif', '', '', '1970-01-01', '2022-07-14 02:19:34');
 
 -- --------------------------------------------------------
 
@@ -170,6 +161,14 @@ CREATE TABLE `download` (
   `hits` int(11) NOT NULL,
   `tanggal` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `download`
+--
+
+INSERT INTO `download` (`id_download`, `id_kategori_download`, `id_user`, `judul_download`, `jenis_download`, `isi`, `gambar`, `website`, `hits`, `tanggal`) VALUES
+(1, 1, 3, 'Kartu Tanda Mahasiswa', 'Download', '<p><strong>Daftar Kunjungan</strong></p>', 'Ktm.pdf', '', 0, '2022-07-14 02:12:06'),
+(2, 1, 3, 'Formulir ', 'Download', '<p><strong>KARTU UJIAN MAHASISWA</strong></p>', 'kartuujian.pdf', '', 0, '2022-07-14 02:11:37');
 
 -- --------------------------------------------------------
 
@@ -198,8 +197,9 @@ CREATE TABLE `galeri` (
 --
 
 INSERT INTO `galeri` (`id_galeri`, `id_kategori_galeri`, `id_user`, `judul_galeri`, `jenis_galeri`, `isi`, `gambar`, `website`, `hits`, `popup_status`, `urutan`, `status_text`, `tanggal`) VALUES
-(4, 5, 3, 'Test1', 'Homepage', '<p>Test1</p>', 'slider-img-1.jpg', '', NULL, 'Publish', 1, 'Ya', '2022-06-24 02:35:59'),
-(5, 5, 3, 'Manusia ', 'Homepage', '<p>adada</p>', 'rslider-img-3.jpg', '', 1, 'Publish', 1, 'Ya', '2022-06-24 02:36:15');
+(6, 5, 3, 'LIBURAN SERU DI MUSEUM GEOLOGI', 'Galeri', '<p>Sahabat museum.. masih libur seru di Museum Geologi, kali ini kegiatan \"Digging Fosil &amp; Painting Fosil\". Tanggal 12 dan 14 Juli 2022, dimulai dari jam 10.00 wib.<br /><br />Jadi hayu gaskeun daftar di tautan bit.ly/DiggingPaintingFossil<br />Peserta yg terpilih akan dihubungi oleh panitia &amp; akan di infokan juga di insta story.<br /><br />Untuk info ke kak Rifqi (0851-5635-1595)<br />Terus pantengin media sosial kita, karena masih ada rangkaian acara lainnya buat nemenin sahabat liburan sekolah.</p>', 'geomuzee-20220714-0006.jpg', 'https://www.instagram.com/geomuzee/', NULL, 'Publish', 1, 'Ya', '2022-07-14 02:10:50'),
+(7, 5, 3, 'Museum Geologi', 'Homepage', '<p>Museum Geologi</p>', 'g3.jpg', '', NULL, 'Publish', 0, 'Ya', '2022-07-14 02:53:05'),
+(8, 5, 3, 'Geologi', 'Homepage', '<p>Geologi</p>', 'g2.jpg', '', NULL, 'Publish', 0, 'Ya', '2022-07-14 02:53:32');
 
 -- --------------------------------------------------------
 
@@ -367,7 +367,7 @@ CREATE TABLE `konfigurasi` (
 --
 
 INSERT INTO `konfigurasi` (`id_konfigurasi`, `namaweb`, `singkatan`, `tagline`, `tentang`, `deskripsi`, `website`, `email`, `email_cadangan`, `alamat`, `telepon`, `hp`, `fax`, `logo`, `icon`, `footer`, `keywords`, `metatext`, `facebook`, `twitter`, `instagram`, `google_plus`, `google_map`, `judul_1`, `pesan_1`, `judul_2`, `pesan_2`, `judul_3`, `pesan_3`, `judul_4`, `pesan_4`, `judul_5`, `pesan_5`, `judul_6`, `pesan_6`, `isi_1`, `isi_2`, `isi_3`, `isi_4`, `isi_5`, `isi_6`, `link_1`, `link_2`, `link_3`, `link_4`, `link_5`, `link_6`, `javawebmedia`, `gambar`, `video`, `rekening`, `gambar_berita`, `status_form_booking`, `max_room_booking`, `nama_direktur`, `jabatan`, `stempel_tanda_tangan`, `protocol`, `smtp_host`, `smtp_port`, `smtp_timeout`, `smtp_user`, `smtp_pass`, `id_user`, `tanggal`) VALUES
-(1, 'PT. Sendi Robansah', 'SR', 'SR', '<p>LOREM IPSUM</p>', 'LOREM IPSUM\r\n', 'https://sendirobansah.skom.id', 'sendi@sendi.com', 'sendi@sendi.com', '<p>Jl. Kiaracondong</p>', '0812222222222', '0812222222222', '0812222222222', 'md_5ae81ccf28c77-removebg-preview.png', 'md_5ae81ccf28c77-removebg-preview2.png', 'footer1.png', 'lorem ipsum', '                                                                                                                            <meta name=\"google-site-verification\" content=\"0Qf5xFJisdNJd9akyAiAH6SK_RIzrRVMZ1L6and19n0\" />\r\n<script>\r\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\r\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\r\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\r\n  })(window,document,\'script\',\'//www.google-analytics.com/analytics.js\',\'ga\');\r\n\r\n  ga(\'create\', \'UA-59575851-1\', \'auto\');\r\n  ga(\'send\', \'pageview\');\r\n\r\n</script>', 'https://www.facebook.com/', 'http://twitter.com/kang_ibeth12', 'https://instagram.com/kang_ibeth12', 'https://www.youtube.com/channel/INICHANNEL', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31685.77876211197!2d107.61780671052672!3d-6.9237568556161255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7e3d3da54e1%3A0x4a43b243e7b45638!2sKec.%20Kiaracondong%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1655972595526!5m2!1sid!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>', 'GASSKEUN', 'fa-money', 'Pengasuh yang santun', 'fa-thumbs-up', 'Jadwal Flexibel', 'fa-adn', 'Menjaga Amanah', 'fa-check-square-o', 'ENAKEUN', 'fa-home', 'GAS', 'fa-laptop', 'LOREM IPSUM', 'ENAK', 'SANTUY', 'DONATE', 'GEOLOGI', 'UPDATE', '', '', '', '', '', '', '<P>LOREM IPSUM WKAS</P>', 'istana-yatim.png', 'fsH_KhUWfho', '<table id=\"dataTables-example\" class=\"table table-bordered\" width=\"100%\">\r\n<thead>\r\n<tr>\r\n<th tabindex=\"0\" colspan=\"1\" rowspan=\"1\" width=\"19%\">Nama Bank</th>\r\n<th tabindex=\"0\" colspan=\"1\" rowspan=\"1\" width=\"21%\">Nomor Rekening</th>\r\n<th tabindex=\"0\" colspan=\"1\" rowspan=\"1\" width=\"7%\">Atas nama</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>BCA KCP Margo City</td>\r\n<td>4212548204</td>\r\n<td>Andoyo</td>\r\n</tr>\r\n<tr>\r\n<td>Bank Mandiri KCP Universitas Indonesia</td>\r\n<td>1570001807768</td>\r\n<td>Eflita Meiyetriani</td>\r\n</tr>\r\n<tr>\r\n<td>Bank BNI Syariah Kantor Cabang Jakarta Selatan</td>\r\n<td>0105301001</td>\r\n<td>Eflita Meiyetriani</td>\r\n</tr>\r\n</tbody>\r\n</table>', 'balairung-budiutomo-01.jpg', 'Aktif', 3, 'Sendi Robansah', 'Direktur', 'S1.png', 'smtp', 'ssl://mail.websitemu.com', 465, 7, 'contact@websitemu.com', 'muhammad', 0, '2022-06-27 06:58:45');
+(1, 'MUSEUM GEOLOGI', 'SR', 'SR', '<p>LOREM IPSUM</p>', 'LOREM IPSUM\r\n', 'https://sendirobansah.skom.id', 'sendi@sendi.com', 'sendi@sendi.com', '<p>Jl. Kiaracondong</p>', '0812222222222', '0812222222222', '0812222222222', 'logo-esdm-web.png', 'esdm1.png', 'footer1.png', 'lorem ipsum', '                                                                                                                            <meta name=\"google-site-verification\" content=\"0Qf5xFJisdNJd9akyAiAH6SK_RIzrRVMZ1L6and19n0\" />\r\n<script>\r\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\r\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\r\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\r\n  })(window,document,\'script\',\'//www.google-analytics.com/analytics.js\',\'ga\');\r\n\r\n  ga(\'create\', \'UA-59575851-1\', \'auto\');\r\n  ga(\'send\', \'pageview\');\r\n\r\n</script>', 'https://www.facebook.com/', 'http://twitter.com/kang_ibeth12', 'https://instagram.com/kang_ibeth12', 'https://www.youtube.com/channel/INICHANNEL', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31685.77876211197!2d107.61780671052672!3d-6.9237568556161255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7e3d3da54e1%3A0x4a43b243e7b45638!2sKec.%20Kiaracondong%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1655972595526!5m2!1sid!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>', 'GASSKEUN', 'fa-money', 'Pengasuh yang santun', 'fa-thumbs-up', 'Jadwal Flexibel', 'fa-adn', 'Menjaga Amanah', 'fa-check-square-o', 'ENAKEUN', 'fa-home', 'GAS', 'fa-laptop', 'LOREM IPSUM', 'ENAK', 'SANTUY', 'DONATE', 'GEOLOGI', 'UPDATE', '', '', '', '', '', '', '<P>LOREM IPSUM WKAS</P>', 'istana-yatim.png', 'fsH_KhUWfho', '<table id=\"dataTables-example\" class=\"table table-bordered\" width=\"100%\">\r\n<thead>\r\n<tr>\r\n<th tabindex=\"0\" colspan=\"1\" rowspan=\"1\" width=\"19%\">Nama Bank</th>\r\n<th tabindex=\"0\" colspan=\"1\" rowspan=\"1\" width=\"21%\">Nomor Rekening</th>\r\n<th tabindex=\"0\" colspan=\"1\" rowspan=\"1\" width=\"7%\">Atas nama</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>BCA KCP Margo City</td>\r\n<td>4212548204</td>\r\n<td>Andoyo</td>\r\n</tr>\r\n<tr>\r\n<td>Bank Mandiri KCP Universitas Indonesia</td>\r\n<td>1570001807768</td>\r\n<td>Eflita Meiyetriani</td>\r\n</tr>\r\n<tr>\r\n<td>Bank BNI Syariah Kantor Cabang Jakarta Selatan</td>\r\n<td>0105301001</td>\r\n<td>Eflita Meiyetriani</td>\r\n</tr>\r\n</tbody>\r\n</table>', 'balairung-budiutomo-01.jpg', 'Aktif', 3, 'Sendi Robansah', 'Direktur', 'S1.png', 'smtp', 'ssl://mail.websitemu.com', 465, 7, 'contact@websitemu.com', 'muhammad', 0, '2022-07-18 01:34:37');
 
 -- --------------------------------------------------------
 
@@ -1363,7 +1363,161 @@ INSERT INTO `kunjungan` (`id_kunjungan`, `alamat`, `ip_address`, `hari`, `waktu`
 (970, 'http://localhost/pkl/kontak', '::1', '2022-06-27', '2022-06-27 08:12:08', '2022-06-27 01:12:08'),
 (971, 'http://localhost/pkl/index.php', '::1', '2022-06-27', '2022-06-27 13:51:54', '2022-06-27 06:51:54'),
 (972, 'http://localhost/pkl/index.php', '::1', '2022-06-27', '2022-06-27 13:53:35', '2022-06-27 06:53:35'),
-(973, 'http://localhost/pkl/index.php', '::1', '2022-06-27', '2022-06-27 13:59:17', '2022-06-27 06:59:17');
+(973, 'http://localhost/pkl/index.php', '::1', '2022-06-27', '2022-06-27 13:59:17', '2022-06-27 06:59:17'),
+(974, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 10:09:50', '2022-06-28 03:09:50'),
+(975, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 11:12:30', '2022-06-28 04:12:30'),
+(976, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 11:13:29', '2022-06-28 04:13:29'),
+(977, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 11:14:28', '2022-06-28 04:14:28'),
+(978, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 11:14:49', '2022-06-28 04:14:49'),
+(979, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 11:16:14', '2022-06-28 04:16:14'),
+(980, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 14:23:53', '2022-06-28 07:23:53'),
+(981, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 14:23:53', '2022-06-28 07:23:53'),
+(982, 'http://localhost/pkl/berita/kategori/kegiatan', '::1', '2022-06-28', '2022-06-28 14:23:59', '2022-06-28 07:23:59'),
+(983, 'http://localhost/pkl/berita', '::1', '2022-06-28', '2022-06-28 14:24:02', '2022-06-28 07:24:02'),
+(984, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:08', '2022-06-28 07:24:08'),
+(985, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:11', '2022-06-28 07:24:11'),
+(986, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:11', '2022-06-28 07:24:11'),
+(987, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:11', '2022-06-28 07:24:11'),
+(988, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:12', '2022-06-28 07:24:12'),
+(989, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:12', '2022-06-28 07:24:12'),
+(990, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:12', '2022-06-28 07:24:12'),
+(991, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:13', '2022-06-28 07:24:13'),
+(992, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:13', '2022-06-28 07:24:13'),
+(993, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:13', '2022-06-28 07:24:13'),
+(994, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:13', '2022-06-28 07:24:13'),
+(995, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:14', '2022-06-28 07:24:14'),
+(996, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 14:24:31', '2022-06-28 07:24:31'),
+(997, 'http://localhost/pkl/berita/kategori/kegiatan', '::1', '2022-06-28', '2022-06-28 14:24:35', '2022-06-28 07:24:35'),
+(998, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:43', '2022-06-28 07:24:43'),
+(999, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:47', '2022-06-28 07:24:47'),
+(1000, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:49', '2022-06-28 07:24:49'),
+(1001, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:51', '2022-06-28 07:24:51'),
+(1002, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:53', '2022-06-28 07:24:53'),
+(1003, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:55', '2022-06-28 07:24:55'),
+(1004, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:57', '2022-06-28 07:24:57'),
+(1005, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:24:59', '2022-06-28 07:24:59'),
+(1006, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:01', '2022-06-28 07:25:01'),
+(1007, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:03', '2022-06-28 07:25:03'),
+(1008, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:06', '2022-06-28 07:25:06'),
+(1009, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:08', '2022-06-28 07:25:08'),
+(1010, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:09', '2022-06-28 07:25:09'),
+(1011, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:10', '2022-06-28 07:25:10'),
+(1012, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:11', '2022-06-28 07:25:11'),
+(1013, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:13', '2022-06-28 07:25:13'),
+(1014, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:14', '2022-06-28 07:25:14'),
+(1015, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:15', '2022-06-28 07:25:15'),
+(1016, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:26', '2022-06-28 07:25:26'),
+(1017, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:27', '2022-06-28 07:25:27'),
+(1018, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:29', '2022-06-28 07:25:29'),
+(1019, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:31', '2022-06-28 07:25:31'),
+(1020, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:34', '2022-06-28 07:25:34'),
+(1021, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:36', '2022-06-28 07:25:36'),
+(1022, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:38', '2022-06-28 07:25:38'),
+(1023, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:41', '2022-06-28 07:25:41'),
+(1024, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:43', '2022-06-28 07:25:43'),
+(1025, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:45', '2022-06-28 07:25:45'),
+(1026, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:48', '2022-06-28 07:25:48'),
+(1027, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:50', '2022-06-28 07:25:50'),
+(1028, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:51', '2022-06-28 07:25:51'),
+(1029, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:55', '2022-06-28 07:25:55'),
+(1030, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:57', '2022-06-28 07:25:57'),
+(1031, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:25:59', '2022-06-28 07:25:59'),
+(1032, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:26:01', '2022-06-28 07:26:01'),
+(1033, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:26:02', '2022-06-28 07:26:02'),
+(1034, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:26:04', '2022-06-28 07:26:04'),
+(1035, 'http://localhost/pkl/berita/read/takut-terkena-kejahatan-online-atau-phising-pahami-dulu-yuk-hal-ini', '::1', '2022-06-28', '2022-06-28 14:26:06', '2022-06-28 07:26:06'),
+(1036, 'http://localhost/pkl/download', '::1', '2022-06-28', '2022-06-28 14:30:56', '2022-06-28 07:30:56'),
+(1037, 'http://localhost/pkl/download', '::1', '2022-06-28', '2022-06-28 14:32:00', '2022-06-28 07:32:00'),
+(1038, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 14:35:10', '2022-06-28 07:35:10'),
+(1039, 'http://localhost/pkl/index.php', '::1', '2022-06-28', '2022-06-28 14:47:26', '2022-06-28 07:47:26'),
+(1040, 'http://localhost/pkl/index.php', '127.0.0.1', '2022-06-29', '2022-06-29 11:03:44', '2022-06-29 04:03:44'),
+(1041, 'http://localhost/pkl/index.php', '::1', '2022-07-02', '2022-07-02 11:11:28', '2022-07-02 04:11:28'),
+(1042, 'http://localhost/pkl/berita/kategori/kegiatan', '::1', '2022-07-02', '2022-07-02 11:11:43', '2022-07-02 04:11:43'),
+(1043, 'http://localhost/pkl/galeri', '::1', '2022-07-02', '2022-07-02 11:11:55', '2022-07-02 04:11:55'),
+(1044, 'http://localhost/pkl/video', '::1', '2022-07-02', '2022-07-02 11:11:58', '2022-07-02 04:11:58'),
+(1045, 'http://localhost/pkl/kontak', '::1', '2022-07-02', '2022-07-02 11:12:03', '2022-07-02 04:12:03'),
+(1046, 'http://localhost/pkl/index.php', '::1', '2022-07-04', '2022-07-04 10:01:50', '2022-07-04 03:01:50'),
+(1047, 'http://localhost/pkl/berita/kategori/kegiatan', '::1', '2022-07-04', '2022-07-04 10:02:08', '2022-07-04 03:02:08'),
+(1048, 'http://localhost/pkl/galeri', '::1', '2022-07-04', '2022-07-04 10:02:16', '2022-07-04 03:02:16'),
+(1049, 'http://localhost/pkl/video', '::1', '2022-07-04', '2022-07-04 10:02:20', '2022-07-04 03:02:20'),
+(1050, 'http://localhost/pkl/kontak', '::1', '2022-07-04', '2022-07-04 10:02:27', '2022-07-04 03:02:27'),
+(1051, 'http://localhost/pkl/index.php', '::1', '2022-07-04', '2022-07-04 10:02:34', '2022-07-04 03:02:34'),
+(1052, 'http://localhost/pkl/index.php', '::1', '2022-07-07', '2022-07-07 10:00:52', '2022-07-07 03:00:52'),
+(1053, 'http://localhost/pkl/index.php', '::1', '2022-07-08', '2022-07-08 08:30:51', '2022-07-08 01:30:51'),
+(1054, 'http://localhost/pkl/index.php', '::1', '2022-07-08', '2022-07-08 08:33:43', '2022-07-08 01:33:43'),
+(1055, 'http://localhost/pkl/berita/kategori/kegiatan', '::1', '2022-07-08', '2022-07-08 08:36:26', '2022-07-08 01:36:26'),
+(1056, 'http://localhost/pkl/berita', '::1', '2022-07-08', '2022-07-08 08:36:28', '2022-07-08 01:36:28'),
+(1057, 'http://localhost/pkl/berita', '::1', '2022-07-08', '2022-07-08 08:36:34', '2022-07-08 01:36:34'),
+(1058, 'http://localhost/pkl/berita/kategori/kegiatan', '::1', '2022-07-08', '2022-07-08 08:36:36', '2022-07-08 01:36:36'),
+(1059, 'http://localhost/pkl/index.php', '::1', '2022-07-08', '2022-07-08 09:12:56', '2022-07-08 02:12:56'),
+(1060, 'http://localhost/pkl/index.php', '::1', '2022-07-08', '2022-07-08 14:24:44', '2022-07-08 07:24:44'),
+(1061, 'http://localhost/pkl/index.php', '::1', '2022-07-14', '2022-07-14 09:46:43', '2022-07-14 02:46:43'),
+(1062, 'http://localhost/pkl/index.php', '::1', '2022-07-14', '2022-07-14 09:46:53', '2022-07-14 02:46:53'),
+(1063, 'http://localhost/pkl/index.php', '::1', '2022-07-14', '2022-07-14 09:53:41', '2022-07-14 02:53:41'),
+(1064, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-14', '2022-07-14 09:56:07', '2022-07-14 02:56:07'),
+(1065, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:14:37', '2022-07-18 01:14:37'),
+(1066, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:16:09', '2022-07-18 01:16:09'),
+(1067, 'http://localhost/pkl/index.php', '127.0.0.1', '2022-07-18', '2022-07-18 08:16:33', '2022-07-18 01:16:33'),
+(1068, 'http://localhost/pkl/index.php', '127.0.0.1', '2022-07-18', '2022-07-18 08:19:28', '2022-07-18 01:19:28'),
+(1069, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:19:41', '2022-07-18 01:19:41'),
+(1070, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:20:56', '2022-07-18 01:20:56'),
+(1071, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:24:40', '2022-07-18 01:24:40'),
+(1072, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:26:08', '2022-07-18 01:26:08'),
+(1073, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:27:13', '2022-07-18 01:27:13'),
+(1074, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:30:43', '2022-07-18 01:30:43'),
+(1075, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:31:08', '2022-07-18 01:31:08'),
+(1076, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:34:41', '2022-07-18 01:34:41'),
+(1077, 'http://localhost/pkl/berita/layanan/liburan-seru-di-museum-geologi-bandung', '::1', '2022-07-18', '2022-07-18 08:40:14', '2022-07-18 01:40:14'),
+(1078, 'http://localhost/pkl/berita/layanan/liburan-seru-di-museum-geologi-bandung', '::1', '2022-07-18', '2022-07-18 08:41:47', '2022-07-18 01:41:47'),
+(1079, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:41:50', '2022-07-18 01:41:50'),
+(1080, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:44:55', '2022-07-18 01:44:55'),
+(1081, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:45:25', '2022-07-18 01:45:25'),
+(1082, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:46:04', '2022-07-18 01:46:04'),
+(1083, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:46:44', '2022-07-18 01:46:44'),
+(1084, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:47:40', '2022-07-18 01:47:40'),
+(1085, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:47:43', '2022-07-18 01:47:43'),
+(1086, 'http://localhost/pkl/berita/layanan/liburan-seru-di-museum-geologi-bandung', '::1', '2022-07-18', '2022-07-18 08:47:52', '2022-07-18 01:47:52'),
+(1087, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:47:58', '2022-07-18 01:47:58'),
+(1088, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:53:23', '2022-07-18 01:53:23'),
+(1089, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 08:57:05', '2022-07-18 01:57:05'),
+(1090, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-18', '2022-07-18 08:59:35', '2022-07-18 01:59:35'),
+(1091, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-18', '2022-07-18 09:00:20', '2022-07-18 02:00:20'),
+(1092, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-18', '2022-07-18 09:01:37', '2022-07-18 02:01:37'),
+(1093, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-18', '2022-07-18 09:02:12', '2022-07-18 02:02:12'),
+(1094, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-18', '2022-07-18 09:02:49', '2022-07-18 02:02:49'),
+(1095, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-18', '2022-07-18 09:03:40', '2022-07-18 02:03:40'),
+(1096, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-18', '2022-07-18 09:06:40', '2022-07-18 02:06:40'),
+(1097, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:08:37', '2022-07-18 02:08:37'),
+(1098, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:10:11', '2022-07-18 02:10:11'),
+(1099, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:11:48', '2022-07-18 02:11:48'),
+(1100, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:13:28', '2022-07-18 02:13:28'),
+(1101, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:14:23', '2022-07-18 02:14:23'),
+(1102, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:17:10', '2022-07-18 02:17:10'),
+(1103, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-18', '2022-07-18 09:17:51', '2022-07-18 02:17:51'),
+(1104, 'http://localhost/pkl/berita/layanan/liburan-seru-di-museum-geologi-bandung', '::1', '2022-07-18', '2022-07-18 09:17:57', '2022-07-18 02:17:57'),
+(1105, 'http://localhost/pkl/galeri', '::1', '2022-07-18', '2022-07-18 09:18:03', '2022-07-18 02:18:03'),
+(1106, 'http://localhost/pkl/video', '::1', '2022-07-18', '2022-07-18 09:18:16', '2022-07-18 02:18:16'),
+(1107, 'http://localhost/pkl/download', '::1', '2022-07-18', '2022-07-18 09:18:24', '2022-07-18 02:18:24'),
+(1108, 'http://localhost/pkl/download', '::1', '2022-07-18', '2022-07-18 09:19:55', '2022-07-18 02:19:55'),
+(1109, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:20:14', '2022-07-18 02:20:14'),
+(1110, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:24:44', '2022-07-18 02:24:44'),
+(1111, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:24:54', '2022-07-18 02:24:54'),
+(1112, 'http://localhost/pkl/index.php', '127.0.0.1', '2022-07-18', '2022-07-18 09:25:10', '2022-07-18 02:25:10'),
+(1113, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:25:16', '2022-07-18 02:25:16'),
+(1114, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:26:07', '2022-07-18 02:26:07'),
+(1115, 'http://localhost/pkl/berita/kategori/penelitian', '::1', '2022-07-18', '2022-07-18 09:26:24', '2022-07-18 02:26:24'),
+(1116, 'http://localhost/pkl/berita/layanan/liburan-seru-di-museum-geologi-bandung', '::1', '2022-07-18', '2022-07-18 09:26:28', '2022-07-18 02:26:28'),
+(1117, 'http://localhost/pkl/galeri', '::1', '2022-07-18', '2022-07-18 09:26:38', '2022-07-18 02:26:38'),
+(1118, 'http://localhost/pkl/video', '::1', '2022-07-18', '2022-07-18 09:26:42', '2022-07-18 02:26:42'),
+(1119, 'http://localhost/pkl/download', '::1', '2022-07-18', '2022-07-18 09:26:45', '2022-07-18 02:26:45'),
+(1120, 'http://localhost/pkl/kontak', '::1', '2022-07-18', '2022-07-18 09:26:50', '2022-07-18 02:26:50'),
+(1121, 'http://localhost/pkl/kontak', '::1', '2022-07-18', '2022-07-18 09:27:31', '2022-07-18 02:27:31'),
+(1122, 'http://localhost/pkl/kontak', '::1', '2022-07-18', '2022-07-18 09:27:48', '2022-07-18 02:27:48'),
+(1123, 'http://localhost/pkl/kontak', '::1', '2022-07-18', '2022-07-18 09:29:07', '2022-07-18 02:29:07'),
+(1124, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:29:17', '2022-07-18 02:29:17'),
+(1125, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 09:31:32', '2022-07-18 02:31:32'),
+(1126, 'http://localhost/pkl/index.php', '::1', '2022-07-18', '2022-07-18 20:47:39', '2022-07-18 13:47:39'),
+(1127, 'http://localhost/pkl/galeri', '::1', '2022-07-18', '2022-07-18 20:47:46', '2022-07-18 13:47:46');
 
 -- --------------------------------------------------------
 
@@ -1431,8 +1585,7 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`id_staff`, `id_user`, `id_kategori_staff`, `urutan`, `nama`, `alamat`, `telepon`, `website`, `email`, `password`, `password_hint`, `isi`, `jabatan`, `keahlian`, `gambar`, `status_staff`, `keywords`, `status_baca`, `status_tutor`, `ip_address`, `tempat_lahir`, `tanggal_lahir`, `tanggal`) VALUES
-(9, 1, NULL, 0, 'Fitra Raudha', '', '0813 8841 0829', '', '', NULL, NULL, NULL, 'Direktur', '', NULL, 'Yes', '', 'Sudah', 'Ya', '', '', '1970-01-01', '2019-07-15 06:31:43'),
-(10, 1, NULL, 0, 'Sigit Yuwono Wachid', '', '085715100485', '', '', NULL, NULL, NULL, '', '', NULL, 'No', '', 'Sudah', 'Ya', '', '', '1970-01-01', '2019-04-14 04:58:29');
+(9, 3, NULL, 0, 'Sendi Robansah', '', '0813 8841 0829', '', '', NULL, NULL, NULL, 'Direktur', '', NULL, 'Yes', '', 'Sudah', 'Ya', '', '', '1970-01-01', '2022-07-14 02:20:11');
 
 -- --------------------------------------------------------
 
@@ -1512,8 +1665,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id_user`, `id_bagian`, `nama`, `email`, `username`, `password`, `password_hint`, `akses_level`, `kode_rahasia`, `gambar`, `keterangan`, `tanggal_post`, `tanggal`) VALUES
 (3, 0, 'Administrator', 'admin@gmail.com', 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', '', 'Admin', NULL, NULL, '<p>ADMIN</p>', '2021-03-13 04:45:16', '2021-03-12 21:45:16'),
-(4, 0, 'Direktur', 'direktur@gmail.com', 'direktur', 'ef55c764d670377f3b24cf6d065252f06ee031c5', '', 'Direktur', NULL, NULL, '<p>Direktur</p>', '2021-03-13 04:46:05', '2021-03-12 21:46:05'),
-(6, 14, 'Sendi Robansah', 'sendirobansah67@gmail.com', 'sendi', 'd3021dd0ea439fdfc553523c145a9f9eafb74041', '', 'User', NULL, NULL, '<p>dsdsdssd</p>', '2022-06-24 14:43:09', '2022-06-24 07:43:09');
+(4, 0, 'Direktur', 'direktur@gmail.com', 'direktur', 'ef55c764d670377f3b24cf6d065252f06ee031c5', '', 'Direktur', NULL, NULL, '<p>Direktur</p>', '2021-03-13 04:46:05', '2021-03-12 21:46:05');
 
 -- --------------------------------------------------------
 
@@ -3503,7 +3655,99 @@ INSERT INTO `user_log` (`id_user_log`, `ip_address`, `id_user`, `username`, `aks
 (0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-06-24 07:49:39'),
 (0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-06-27 06:53:59'),
 (0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-06-27 06:57:54'),
-(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-06-27 06:58:00');
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-06-27 06:58:00'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-06-28 07:29:41'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download/tambah', '', '2022-06-28 07:29:43'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download/tambah', '', '2022-06-28 07:30:51'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-06-28 07:30:52'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download/tambah', '', '2022-06-28 07:31:20'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download/tambah', '', '2022-06-28 07:31:56'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-06-28 07:31:56'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/video', '', '2022-06-28 07:32:12'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda', '', '2022-06-28 07:33:06'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda/edit/1', '', '2022-06-28 07:33:11'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda/edit/1', '', '2022-06-28 07:33:28'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda', '', '2022-06-28 07:33:28'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda/edit/1', '', '2022-06-28 07:33:31'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda/tambah', '', '2022-06-28 07:34:02'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-06-28 08:06:29'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-06-28 08:06:54'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-06-28 08:07:55'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-02 04:12:35'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-04 03:02:57'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-07-04 03:03:01'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-07-04 03:03:04'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-08 07:25:53'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-08 07:27:53'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-08 07:28:09'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/kategori', '', '2022-07-08 07:28:17'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-08 07:30:59'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/tambah', '', '2022-07-08 07:38:54'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-08 07:44:55'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-08 07:45:44'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/edit/11', '', '2022-07-08 07:49:32'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-08 07:50:13'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/tambah', '', '2022-07-08 07:51:43'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/kategori', '', '2022-07-08 07:51:50'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/kategori', '', '2022-07-08 07:52:00'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/kategori', '', '2022-07-08 07:53:21'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/kategori/edit/5', '', '2022-07-08 07:57:57'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-08 08:00:04'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/kategori', '', '2022-07-08 08:00:06'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-07-11 01:16:45'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/edit/5', '', '2022-07-11 01:19:50'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-07-11 01:21:59'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/kategori_galeri', '', '2022-07-11 01:23:06'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-07-11 01:30:04'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/video', '', '2022-07-12 01:55:30'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda', '', '2022-07-12 02:00:40'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-14 01:58:00'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/delete/11', '', '2022-07-14 02:02:48'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-14 02:02:49'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/delete/10', '', '2022-07-14 02:02:53'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-14 02:02:53'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/delete/8', '', '2022-07-14 02:02:57'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-14 02:02:57'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/tambah', '', '2022-07-14 02:02:59'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/tambah', '', '2022-07-14 02:05:40'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/jenis_berita/Berita', '', '2022-07-14 02:05:41'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/tambah', '', '2022-07-14 02:05:44'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/tambah', '', '2022-07-14 02:07:22'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/jenis_berita/Layanan', '', '2022-07-14 02:07:22'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita/jenis_berita/Layanan', '', '2022-07-14 02:07:38'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-14 02:07:41'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-14 02:07:44'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-07-14 02:08:18'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/proses', '', '2022-07-14 02:08:33'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-07-14 02:08:34'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/tambah', '', '2022-07-14 02:08:38'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/tambah', '', '2022-07-14 02:10:17'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/tambah', '', '2022-07-14 02:10:50'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-07-14 02:10:50'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-07-14 02:11:14'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download/edit/2', '', '2022-07-14 02:11:23'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download/edit/2', '', '2022-07-14 02:11:37'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-07-14 02:11:37'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download/edit/1', '', '2022-07-14 02:11:43'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download/edit/1', '', '2022-07-14 02:12:06'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/download', '', '2022-07-14 02:12:06'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/video', '', '2022-07-14 02:12:24'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda', '', '2022-07-14 02:17:04'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda/delete/1', '', '2022-07-14 02:17:09'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda', '', '2022-07-14 02:17:09'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda/tambah', '', '2022-07-14 02:17:12'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda/tambah', '', '2022-07-14 02:18:50'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda/tambah', '', '2022-07-14 02:18:57'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/agenda', '', '2022-07-14 02:19:01'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-07-14 02:47:15'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/tambah', '', '2022-07-14 02:47:18'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/tambah', '', '2022-07-14 02:52:49'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/tambah', '', '2022-07-14 02:53:05'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-07-14 02:53:05'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/tambah', '', '2022-07-14 02:53:09'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri/tambah', '', '2022-07-14 02:53:32'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/galeri', '', '2022-07-14 02:53:32'),
+(0, '::1', 3, 'admin', '', 'http://localhost/pkl/admin/berita', '', '2022-07-18 01:14:14');
 
 -- --------------------------------------------------------
 
@@ -3642,7 +3886,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `agenda`
 --
 ALTER TABLE `agenda`
-  MODIFY `id_agenda` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_agenda` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `bagian`
@@ -3654,7 +3898,7 @@ ALTER TABLE `bagian`
 -- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `client`
@@ -3666,13 +3910,13 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `download`
 --
 ALTER TABLE `download`
-  MODIFY `id_download` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_download` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `kategori`
@@ -3708,13 +3952,13 @@ ALTER TABLE `konfigurasi`
 -- AUTO_INCREMENT for table `kunjungan`
 --
 ALTER TABLE `kunjungan`
-  MODIFY `id_kunjungan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=974;
+  MODIFY `id_kunjungan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1128;
 
 --
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `id_staff` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_staff` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `sub_menu`
@@ -3732,7 +3976,7 @@ ALTER TABLE `up`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
