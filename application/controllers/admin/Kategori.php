@@ -108,4 +108,4 @@ $this->simple_login->check_login($pengalihan);
 }
 
 /* End of file Kategori.php */
-/* Location: ./application/controllers/admin/Kategori.php */
+/* Lokasi File: ./application/controllers/admin/Kategori.php */

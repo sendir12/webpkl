@@ -290,4 +290,4 @@ class Project extends CI_Controller {
 }
 
 /* End of file Project.php */
-/* Location: ./application/controllers/admin/Project.php */
+/* Lokasi File: ./application/controllers/admin/Project.php */

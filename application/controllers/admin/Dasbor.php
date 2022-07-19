@@ -35,4 +35,4 @@ class Dasbor extends CI_Controller {
 }
 
 /* End of file Dasbor.php */
-/* Location: ./application/controllers/admin/Dasbor.php */
+/* Lokasi File: ./application/controllers/admin/Dasbor.php */

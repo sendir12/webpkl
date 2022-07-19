@@ -175,4 +175,4 @@ class Bagian extends CI_Controller {
 }
 
 /* End of file Bagian.php */
-/* Location: ./application/controllers/admin/Bagian.php */
+/* Lokasi File: ./application/controllers/admin/Bagian.php */

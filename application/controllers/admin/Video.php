@@ -124,3 +124,5 @@ $this->simple_login->check_login($pengalihan);
 
 	}
 }
+/* End of file Video.php */
+/* Lokasi File: ./application/controllers/admin/Video.php */

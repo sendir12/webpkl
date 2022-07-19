@@ -699,4 +699,4 @@ class Staff extends CI_Controller {
 }
 
 /* End of file Staff.php */
-/* Location: ./application/controllers/admin/Staff.php */
+/* Lokasi File: ./application/controllers/admin/Staff.php */

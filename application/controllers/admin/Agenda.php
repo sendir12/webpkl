@@ -127,3 +127,5 @@ class Agenda extends CI_Controller {
 	}
 	
 }
+/* End of file Agenda.php */
+/* Lokasi File: ./application/controllers/admin/Agenda.php */

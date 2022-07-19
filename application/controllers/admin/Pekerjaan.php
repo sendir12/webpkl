@@ -105,4 +105,4 @@ $this->simple_login->check_login($pengalihan);
 }
 
 /* End of file Pekerjaan.php */
-/* Location: ./application/controllers/admin/Pekerjaan.php */
+/* Lokasi File: ./application/controllers/admin/Pekerjaan.php */

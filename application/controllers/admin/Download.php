@@ -203,4 +203,4 @@ $this->simple_login->check_login($pengalihan);
 }
 
 /* End of file Download.php */
-/* Location: ./application/controllers/admin/Download.php */
+/* Lokasi File: ./application/controllers/admin/Download.php */

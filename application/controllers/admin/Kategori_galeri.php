@@ -104,4 +104,4 @@ $this->simple_login->check_login($pengalihan);
 }
 
 /* End of file Kategori_galeri.php */
-/* Location: ./application/controllers/admin/Kategori_galeri.php */
+/* Lokasi File: ./application/controllers/admin/Kategori_galeri.php */

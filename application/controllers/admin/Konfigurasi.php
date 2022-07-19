@@ -488,4 +488,4 @@ $this->load->library('upload', $config);
 }
 
 /* End of file Konfigurasi.php */
-/* Location: ./application/controllers/admin/Konfigurasi.php */
+/* Lokasi File: ./application/controllers/admin/Konfigurasi.php */

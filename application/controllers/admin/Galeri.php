@@ -240,4 +240,4 @@ $this->simple_login->check_login($pengalihan);
 }
 
 /* End of file Galeri.php */
-/* Location: ./application/controllers/admin/Galeri.php */
+/* Lokasi File: ./application/controllers/admin/Galeri.php */

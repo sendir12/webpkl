@@ -143,4 +143,4 @@ class Akun extends CI_Controller {
 }
 
 /* End of file Akun.php */
-/* Location: ./application/controllers/admin/Akun.php */
+/* Lokasi File: ./application/controllers/admin/Akun.php */

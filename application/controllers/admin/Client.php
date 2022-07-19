@@ -776,4 +776,4 @@ class Client extends CI_Controller {
 }
 
 /* End of file Client.php */
-/* Location: ./application/controllers/admin/Client.php */
+/* Lokasi File: ./application/controllers/admin/Client.php */

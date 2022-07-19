@@ -169,4 +169,4 @@ class User extends CI_Controller {
 }
 
 /* End of file User.php */
-/* Location: ./application/controllers/admin/User.php */
+/* Lokasi File: ./application/controllers/admin/User.php */

@@ -106,4 +106,4 @@ $this->simple_login->check_login($pengalihan);
 }
 
 /* End of file Kategori_download.php */
-/* Location: ./application/controllers/admin/Kategori_download.php */
+/* Lokasi File: ./application/controllers/admin/Kategori_download.php */

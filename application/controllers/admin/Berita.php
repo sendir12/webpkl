@@ -375,4 +375,4 @@ class Berita extends CI_Controller {
 }
 
 /* End of file Berita.php */
-/* Location: ./application/controllers/admin/Berita.php */
+/* Lokasi File: ./application/controllers/admin/Berita.php */
